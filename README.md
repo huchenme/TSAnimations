@@ -7,4 +7,5 @@ Inspired by [15DaysofAnimationsinSwift](https://github.com/larrynatalicio/15Days
 ## Index ##
 
 Animation 01 - NavigationBarAnimation
+
 ![NavigationBarAnimation](NavigationBarAnimation/NavigationBarAnimation.gif)
