@@ -13,3 +13,7 @@ Inspired by
 Animation 01 - NavigationBarAnimation
 
 ![NavigationBarAnimation](NavigationBarAnimation/NavigationBarAnimation.gif)
+
+Animation 02 - LockScreenAnimation
+
+![LockScreenAnimation](LockScreenAnimation/LockScreenAnimation.gif)

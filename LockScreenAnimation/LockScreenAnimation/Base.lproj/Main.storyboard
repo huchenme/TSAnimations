@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LockScreenAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topLock" translatesAutoresizingMaskIntoConstraints="NO" id="faV-yv-vas">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomLock" translatesAutoresizingMaskIntoConstraints="NO" id="Ltl-k7-7dm">
+                                <rect key="frame" x="0.0" y="300" width="600" height="300"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lockBorder" translatesAutoresizingMaskIntoConstraints="NO" id="zq6-wx-BkM">
+                                <rect key="frame" x="243.5" y="245" width="112" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="PPW-dq-zTH"/>
+                                    <constraint firstAttribute="height" constant="110" id="q0E-B0-IcQ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lockKeyhole" translatesAutoresizingMaskIntoConstraints="NO" id="1XB-Rn-KBY">
+                                <rect key="frame" x="265" y="265" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="2L2-4z-eFK"/>
+                                    <constraint firstAttribute="height" constant="70" id="XgP-gh-khS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ltl-k7-7dm" secondAttribute="trailing" id="3at-p6-0Fd"/>
+                            <constraint firstItem="zq6-wx-BkM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3ge-Wy-NC7"/>
+                            <constraint firstAttribute="trailing" secondItem="faV-yv-vas" secondAttribute="trailing" id="45q-aP-iJp"/>
+                            <constraint firstItem="Ltl-k7-7dm" firstAttribute="top" secondItem="faV-yv-vas" secondAttribute="bottom" id="5eQ-y1-KUR"/>
+                            <constraint firstItem="1XB-Rn-KBY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BMp-bf-mX4"/>
+                            <constraint firstItem="faV-yv-vas" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FBZ-Py-Oed"/>
+                            <constraint firstItem="1XB-Rn-KBY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SJb-sf-QuG"/>
+                            <constraint firstItem="faV-yv-vas" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ulx-1L-ZSL"/>
+                            <constraint firstItem="Ltl-k7-7dm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aju-U5-C9m"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ltl-k7-7dm" secondAttribute="bottom" id="otT-yp-ddG"/>
+                            <constraint firstItem="faV-yv-vas" firstAttribute="height" secondItem="Ltl-k7-7dm" secondAttribute="height" id="v0z-Jv-BBF"/>
+                            <constraint firstItem="zq6-wx-BkM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xuy-Qe-g1q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLock" destination="Ltl-k7-7dm" id="GSN-eV-fIT"/>
+                        <outlet property="lockBorder" destination="zq6-wx-BkM" id="8uc-t1-kwg"/>
+                        <outlet property="lockKeyhole" destination="1XB-Rn-KBY" id="1W9-Kg-Z19"/>
+                        <outlet property="topLock" destination="faV-yv-vas" id="oLI-9w-flk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="565" y="453"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bottomLock" width="4184" height="2118"/>
+        <image name="lockBorder" width="802" height="800"/>
+        <image name="lockKeyhole" width="496" height="496"/>
+        <image name="topLock" width="4183" height="2117"/>
+    </resources>
+</document>
