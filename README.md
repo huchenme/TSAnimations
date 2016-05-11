@@ -17,3 +17,7 @@ Animation 01 - NavigationBarAnimation
 Animation 02 - LockScreenAnimation
 
 ![LockScreenAnimation](LockScreenAnimation/LockScreenAnimation.gif)
+
+Animation 03 - MapLocationAnimation
+
+![MapLocationAnimation](MapLocationAnimation/MapLocationAnimation.gif)
