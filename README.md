@@ -21,3 +21,7 @@ Animation 02 - LockScreenAnimation
 Animation 03 - MapLocationAnimation
 
 ![MapLocationAnimation](MapLocationAnimation/MapLocationAnimation.gif)
+
+Animation 04 - LoadingDotsAnimation
+
+![LoadingDotsAnimation](LoadingDotsAnimation/LoadingDotsAnimation.gif)
